@@ -13,10 +13,12 @@
 
 <p>Para este proyecto en particular, utilizamos dos conjuntos de imágenes distintos: uno formado por fotos tomadas a <a href="https://susanqq.github.io/UTKFace/">personas reales</a> y otro con <a href="https://github.com/sejas/ai-StyleGAN2-faces/tree/master">imágenes creadas por StyleGan2</a>, una red adversarial generativa para la creación de imágenes. Presentamos dos imágenes, una de cada set, para ejemplificar lo difícil que puede ser diferenciar un rostro real de uno falso a primera vista. Ambas representan chicas de edades similares, y resulta casi imposible encontrar ninguna señal que indique que la joven de la derecha verdaderamente no existe.</p>
 
-<!-- <div style="display: flex; gap: 20px;">
-  <img src="image1.jpg" alt="First image" style="width: 300px;">
-  <img src="image2.jpg" alt="Second image" style="width: 300px;">
-</div>-->
+<div align="center">  
+  <img src="img/17_1_0_20170109213933756.jpg" alt="First image"
+       style="width: 300px; height: 300px; object-fit: cover; object-position: center;">
+  <img src="img/0b94f59c-8631-4526-a634-42d6b08ce1a9.jpg" alt="Second image"
+       style="width: 300px; height: 300px; object-fit: cover; object-position: center;">
+</div>
 
 <p>Nuestro objetivo es estudiar como de viable es la creación de un modelo para la detección de deepfakes, y descubrir que aspectos de una imagen hacen que sea detectada como generada por IA.</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
@@ -25,16 +27,17 @@
 
 <p>Dividimos el proyecto en cinco fases: descarga de imágenes, procesamiento de imágenes, diseño de los modelos, entrenamiento de los modelos, evaluación de los modelos y, finalmente, la aplicación al mundo real. Todo el código ha sido ejecutado en Google Collab, y el cuaderno Jupyter está disponible en este repositorio. </p>
 
- <!-- <img src="image1.jpg" alt="First image" style="width: 300px;"> -->
-
+<div align="center">
+  <img src="img/Evaluación de modelos.png" alt="First image" >
+</div>
 
 <p>El código está listo para ser ejecutado, ya que las imágenes serán descargadas desde unas carpetas compartidas en Google Drive. En caso de que las carpetas no estén disponibles, se incluye en este repositorio los archivos zip con ambos datasets para su uso, siempre de acuerdo con las normas de la licencias de ambos.
 
 Ya que tanto la descarga de imágenes como el entrenamiento de los modelos requiere de mucho tiempo, se proporciona también todo el código ejecutado y archivos con los mejores pesos de cada modelo. De querer realizar alguna prueba con cualquiera de ellos, el archivo correspondiente puede ser subido al entorno y utilizado.
 
 Finalmente, en el apartado de "Aplicaciones en el mundo real", se ofrece la oportunidad de probar la eficacia del modelo con imágenes seleccionadas por el usuario. Solo es necesario subir alguna imagen (real o no) recien creada carpeta "predicciones" y el resto del código se ocupa de las operaciones. También es posible conseguir la explicación de LIME para cada imagen, junto con su predicción, pero al tener mayor tiempo de ejecución se presenta en un bloque de código aparte, por si no se quiere ejecutarlo.</p>
- <!-- <img src="image1.jpg" alt="First image" style="width: 300px;"> -->
-<!-- <img src="image1.jpg" alt="First image" style="width: 300px;"> -->
+<img src="img/prediccion.png" alt="First image"  align="center">
+<img src="img/LIME.png" alt="First image" align="center">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
