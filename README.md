@@ -31,9 +31,9 @@
   <img src="img/Evaluación de modelos.png" alt="First image" >
 </div>
 
-<p>El código está listo para ser ejecutado, ya que las imágenes serán descargadas desde unas carpetas compartidas en Google Drive. En caso de que las carpetas no estén disponibles, se incluye en este repositorio los archivos zip con ambos datasets para su uso, siempre de acuerdo con las normas de la licencias de ambos.
+<p>El código está listo para ser ejecutado, ya que las imágenes serán descargadas desde unas carpetas compartidas en Google Drive. En caso de que las carpetas no estén disponibles, pueden ser descargadas desde sus respectivos propietarios, siguiendo las normas de licencia.
 
-Ya que tanto la descarga de imágenes como el entrenamiento de los modelos requiere de mucho tiempo, se proporciona también todo el código ejecutado y archivos con los mejores pesos de cada modelo. De querer realizar alguna prueba con cualquiera de ellos, el archivo correspondiente puede ser subido al entorno y utilizado.
+Ya que tanto la descarga de imágenes como el entrenamiento de los modelos requiere de mucho tiempo, se proporciona también todo el código ejecutado y archivos con los mejores pesos de los dos modelos pre-entrenados. De querer realizar alguna prueba con cualquiera de ellos, el archivo correspondiente puede ser subido al entorno y utilizado.
 
 Finalmente, en el apartado de "Aplicaciones en el mundo real", se ofrece la oportunidad de probar la eficacia del modelo con imágenes seleccionadas por el usuario. Solo es necesario subir alguna imagen (real o no) recien creada carpeta "predicciones" y el resto del código se ocupa de las operaciones. También es posible conseguir la explicación de LIME para cada imagen, junto con su predicción, pero al tener mayor tiempo de ejecución se presenta en un bloque de código aparte, por si no se quiere ejecutarlo.</p>
 <img src="img/prediccion.png" alt="First image"  align="center">
