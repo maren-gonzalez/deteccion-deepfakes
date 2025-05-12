@@ -33,9 +33,15 @@
 
 <p>El código está listo para ser ejecutado, ya que las imágenes serán descargadas desde unas carpetas compartidas en Google Drive. En caso de que las carpetas no estén disponibles, pueden ser descargadas desde sus respectivos propietarios, siguiendo las normas de licencia.
 
-Ya que tanto la descarga de imágenes como el entrenamiento de los modelos requiere de mucho tiempo, se proporciona también todo el código ejecutado y archivos con los mejores pesos de los dos modelos pre-entrenados. De querer realizar alguna prueba con cualquiera de ellos, el archivo correspondiente puede ser subido al entorno y utilizado.
+Los pasos del proyecto son los siguientes:
 
-Finalmente, en el apartado de "Aplicaciones en el mundo real", se ofrece la oportunidad de probar la eficacia del modelo con imágenes seleccionadas por el usuario. Solo es necesario subir alguna imagen (real o no) recien creada carpeta "predicciones" y el resto del código se ocupa de las operaciones. También es posible conseguir la explicación de LIME para cada imagen, junto con su predicción, pero al tener mayor tiempo de ejecución se presenta en un bloque de código aparte, por si no se quiere ejecutarlo.</p>
+1. Tras la descarga de datos se transforman las imágenes para que estén listas para los modelos y se aplica una label a cada una: las generadas por ia tendrán 0 y las reales. Después se crean los sets de train, val y test, además de los data loaders asociados a cada uno.
+2. Ahora se crean los tres modelos. ResNet18 y MobileNetV2 apenas son modificados, pero el modelo CNN es diseñado desde cero. Se crean también los optimizadores para cada modelo.
+3. La siguiente fase es el entrenamiento. Cada modelo se entrena durante 5 epochs. Se presenta la pérdida de entrenamiento y la accuracy de validación por cada epoch.
+4. Después se ejecuta la evaluación de cada modelo. Para cada uno se calcula la accuracy, precision, recall, f1 measure y confusion matrix.
+5. Finalmente, en el apartado de "Aplicaciones en el mundo real", se ofrece la oportunidad de probar la eficacia del modelo con imágenes seleccionadas por el usuario. Solo es necesario subir alguna imagen (real o no) a la recien creada carpeta "predicciones" y el resto del código se ocupa de las operaciones. También es posible conseguir la explicación de LIME para cada imagen, junto con su predicción, pero al tener mayor tiempo de ejecución se presenta en un bloque de código aparte, por si no se quiere ejecutar en el momento.
+
+Ya que tanto la descarga de imágenes como el entrenamiento de los modelos requiere de mucho tiempo, se proporciona también todo el código ejecutado y archivos con los mejores pesos de los dos modelos pre-entrenados. De querer realizar alguna prueba con cualquiera de ellos en el paso final, el archivo correspondiente puede ser subido al entorno y utilizado. Solo es necesario ejecutar las dos primeras celdas con los install e imports de las librerias.</p>
 <img src="img/prediccion.png" alt="First image"  align="center">
 <img src="img/LIME.png" alt="First image" align="center">
 
@@ -46,9 +52,9 @@ Finalmente, en el apartado de "Aplicaciones en el mundo real", se ofrece la opor
 <!-- USAGE EXAMPLES -->
 ## Usos
 
-<p>Mediante varias pruebas, hemos descubierto que contamos con un modelo muy fiable ante la detección de deepfakes u cualquier tipo de imágenes generadas por la Inteligencia Artificial. En el caso de este proyecto, ofrecemos una opción sencilla para probar el origen de imágenes seleccionadas por el usuario.
+<p>Mediante varias pruebas, hemos descubierto que contamos con un modelo muy fiable ante la detección de deepfakes o cualquier tipo de imágenes generadas por la Inteligencia Artificial. Ofrecemos una opción sencilla para probar el origen de imágenes seleccionadas por el usuario.
 
-En cuanto aplicaciones de tecnologias para la protección contra deepfakes, las respuestas no se quedan cortas. La creación de los deepfake ha planteado nuevos desafíos técnicos, sociales y éticos. Este tipo de tecnologías han pasado de ser una herramienta de laboratorio a estar disponible para cualquier persona que tenga acceso a internet. Esta facilidad de acceso, combinada con la dificultad para distinguir contenido real del contenido manipulado, pone en peligro la confianza en la información visual, la privacidad de las personas, y la integridad de las plataformas.
+En cuanto aplicaciones de tecnologias para la protección contra deepfakes, las respuestas no se quedan cortas. La creación de los deepfakes ha planteado nuevos desafíos técnicos, sociales y éticos. Este tipo de tecnologías han pasado de ser una herramienta de laboratorio a estar disponible para cualquier persona que tenga acceso a internet. Esta facilidad de acceso, combinada con la dificultad para distinguir contenido real del contenido manipulado, pone en peligro la confianza en la información visual, la privacidad de las personas, y la integridad de las plataformas.
 
 En el contexto actual, donde las fake news, la suplantación de identidad y el fraude digital son cada vez más comunes, resulta necesario investigar métodos para distinguir el contenido real del generado artificialmente. Esta preocupación también está relacionada con la protección de los derechos individuales y la lucha contra la desinformación.
 </p>
