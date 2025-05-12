@@ -71,5 +71,6 @@ En el contexto actual, donde las fake news, la suplantación de identidad y el f
 ## Autoras
 Universidad de Deusto
 <a href="https://github.com/maren-gonzalez">Maren Gonzalez Garcia</a>
+<br>
 <a href="https://github.com/ainhoa-conde">Ainhoa Conde Basagutxibeaskoa</a>
 
