@@ -66,3 +66,10 @@ En el contexto actual, donde las fake news, la suplantación de identidad y el f
 <br>
 <a href="https://github.com/sejas/ai-StyleGAN2-faces/tree/master">Dataset de imágenes generadas por StyleGan2</a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Autoras
+Universidad de Deusto
+<a href="https://github.com/maren-gonzalez">Maren Gonzalez Garcia</a>
+<a href="https://github.com/ainhoa-conde">Ainhoa Conde Basagutxibeaskoa</a>
+
